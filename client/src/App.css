@@ -1,0 +1,116 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 20px; /* Добавлено для отступов */
+}
+
+.App-link {
+  color: #61dafb;
+  text-decoration: none; /* Убираем подчеркивание */
+}
+
+.App-link:hover {
+  text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+.content {
+  max-width: 1200px; /* Ограничиваем максимальную ширину */
+  margin: 0 auto; /* Центрируем контент */
+  padding: 20px; /* Добавлено для отступов */
+}
+
+.content__block {
+  display: flex;
+  flex-direction: row; /* Изменено на строку для размещения текста и изображения рядом */
+  align-items: center; /* Центрируем содержимое по вертикали */
+  text-align: left; /* Выравнивание текста влево */
+}
+
+.content__image-container {
+  margin-left: 20px; /* Отступ между текстом и изображением */
+}
+
+.content__image {
+  max-width: 500px; /* Установите максимальную ширину изображения */
+  width: 100%; /* Адаптивная ширина изображения */
+  height: auto; /* Автоматическая высота для сохранения пропорций */
+  border-radius: 8px; /* Закругленные углы для изображения */
+}
+
+.content__text-container {
+  padding: 10px; /* Отступы для текстового контейнера */
+  flex: 1; /* Позволяет текстовому контейнеру занимать оставшееся пространство */
+}
+
+.content__text {
+  font-size: 1.2rem; /* Увеличенный размер шрифта для лучшей читаемости */
+  line-height: 1.5; /* Увеличенный межстрочный интервал */
+  color: #333; /* Темный цвет текста для контраста */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Адаптивные стили для мобильных устройств */
+@media (max-width: 768px) {
+  .content__block {
+    flex-direction: column; /* Вертикальное расположение на мобильных устройствах */
+    align-items: center; /* Центрируем содержимое по горизонтали */
+  }
+
+  .content__image-container {
+    margin-left: 0; /* Убираем отступ для мобильных устройств */
+    margin-top: 20px; /* Добавляем отступ сверху для изображения */
+  }
+
+  .content__text {
+    font-size: 1rem; /* Уменьшенный размер шрифта на мобильных устройствах */
+  }
+}
+
+.catalog__button {
+  align-items: center;
+  justify-items: center;
+  margin: 30px auto 0;
+  margin-bottom: 30px;  
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #0b422e;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.catalog__button:hover {
+  background-color: #800748;
+}
