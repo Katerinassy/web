@@ -69,52 +69,61 @@
     }
 }
 .policy-text {
-    background-color: #fff;
+    background: linear-gradient(135deg, #f9f9f9, #e3e3e3);
     color: #333;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 20px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
+    padding: 25px;
+    border-radius: 15px;
+    margin-top: 25px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    max-width: 900px;
     width: 100%;
     text-align: left;
-    font-size: 14px;
+    font-size: 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Aligns content at the top */
+    height: auto; /* Removed fixed height */
+    gap: 15px; /* Added gap between children */
 }
 
 .policy-text p {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    line-height: 1.6;
 }
 
 .close-policy {
-    background-color: #800748;
+    background: linear-gradient(135deg, #800748, #a31a5a);
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 24px;
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: 12px;
     transition: background-color 0.3s ease, transform 0.2s ease;
     font-size: 16px;
     display: block;
-    margin-top: 15px;
+    margin: 20px auto 0;
     width: 100%;
-    max-width: 200px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 220px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .close-policy:hover {
-    background-color: #fff;
+    background: #fff;
     color: #800748;
-    transform: scale(1.05);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
 @media (max-width: 768px) {
     .policy-text {
-        padding: 15px;
-        font-size: 12px;
+        padding: 20px;
+        font-size: 13px;
     }
 
     .close-policy {
         font-size: 14px;
+        padding: 10px 20px;
     }
 }

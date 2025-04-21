@@ -26,7 +26,7 @@ const RegisterForm = () => {
     const last_name = nameParts[1] || '';
   
     try {
-      const response = await fetch('http://localhost:3001/api/users/register', {
+      const response = await fetch('http://193.46.217.116:3001/api/users/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

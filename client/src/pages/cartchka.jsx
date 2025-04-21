@@ -8,7 +8,7 @@ const Cart = () => {
 
   const handleCheckout = async () => {
     try {
-      const response = await fetch('http://localhost:3001/api/orders/create', {
+      const response = await fetch('http://193.46.217.116:3001/api/orders/create', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
